@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
 
 const material_modules = [
   LayoutModule,
@@ -14,6 +15,7 @@ const material_modules = [
   MatSidenavModule,
   MatIconModule,
   MatListModule,
+  MatCardModule,
 ];
 @NgModule({
   declarations: [],

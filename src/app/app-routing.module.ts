@@ -8,20 +8,22 @@ const routes: Routes = [
   {
     path: '',
     component: InicioComponent,
+    children: [
+      {
+        path: 'acercade',
+        component: NosotrosComponent,
+      },
+      {
+        path: 'ingresar',
+        component: LoginComponent,
+      },
+      {
+        path: 'contacto',
+        component: ContactoComponent,
+      },
+    ],
   },
 
-  {
-    path: 'acercade',
-    component: NosotrosComponent,
-  },
-  {
-    path: 'ingresar',
-    component: LoginComponent,
-  },
-  {
-    path: 'contacto',
-    component: ContactoComponent,
-  },
   {
     path: 'admin',
     loadChildren: () =>
